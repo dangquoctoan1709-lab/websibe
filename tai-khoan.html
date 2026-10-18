@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tài khoản/Góp ý - LuxStay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<meta name="description" content="LuxStay - khách sạn nghỉ dưỡng ven biển: phòng hướng biển, hồ bơi vô cực, phục vụ 24/7."><link rel="icon" href="anh/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Bỏ qua menu</a>
+<div class="layout">
+<aside class="side"><a class="logo" href="index.html">LuxStay</a><nav aria-label="Menu chính"><ul><li><a href="index.html">Trang chủ</a></li><li><a href="gioi-thieu.html">Giới thiệu</a></li><li><a href="loai-phong.html">Loại phòng</a></li><li><a href="thu-vien.html">Thư viện ảnh</a></li><li><a href="danh-gia.html">Đánh giá</a></li><li><a href="tai-khoan.html" class=on aria-current=page>Tài khoản/Góp ý</a></li><li><a href="lien-he.html">Liên hệ</a></li></ul></nav><div id="who"></div><div class="hot">Hotline:<strong>0905 868 999</strong></div></aside>
+<div class="main"><main class="wrap" id="main">
+<div class="box"><h1>Cổng thành viên và tiếp nhận đánh giá</h1></div><div id="mine" class="box" hidden><h2>Đặt phòng của bạn</h2><ul id="mylist" class="info"></ul><small>Dữ liệu lưu trên trình duyệt này.</small></div>
+<div class="grid2 top">
+<section class="box"><div class="tabs" role="tablist"><button role="tab" id="t-login" aria-selected="true" aria-controls="p-login">Đăng nhập</button><button role="tab" id="t-reg" aria-selected="false" aria-controls="p-reg">Đăng ký</button></div>
+<form id="p-login" role="tabpanel" aria-labelledby="t-login"><label for="em">Email / Tên đăng nhập:</label><input id="em" required><label for="mk">Mật khẩu:</label><input id="mk" type="password" required>
+<div class="row"><label class="inline"><input type="checkbox" checked> Ghi nhớ</label><a href="#">Quên mật khẩu?</a></div><button class="btn block">Đăng nhập tài khoản</button>
+<div class="or">Hoặc kết nối qua</div><div class="two"><button type="button" class="btn alt">Google</button><button type="button" class="btn alt">Facebook</button></div><p class="note" role="status"></p></form>
+<form id="p-reg" role="tabpanel" aria-labelledby="t-reg" hidden><label for="rn">Họ và tên:</label><input id="rn" required><label for="re">Email:</label><input id="re" type="email" required><label for="rp">Mật khẩu:</label><input id="rp" type="password" minlength="6" required>
+<label for="rq">Nhập lại mật khẩu:</label><input id="rq" type="password" required><div class="row"></div><button class="btn block">Tạo tài khoản</button><p class="note" role="status"></p></form></section>
+<form class="box" id="fb" aria-label="Form góp ý"><h2>Form gửi ý kiến góp ý</h2>
+<fieldset><legend>Đánh giá chất lượng:</legend><div class="rate"><input type="radio" name="sao" id="s5" value="5"><label for="s5" title="5 sao">★</label><input type="radio" name="sao" id="s4" value="4"><label for="s4" title="4 sao">★</label><input type="radio" name="sao" id="s3" value="3"><label for="s3" title="3 sao">★</label><input type="radio" name="sao" id="s2" value="2"><label for="s2" title="2 sao">★</label><input type="radio" name="sao" id="s1" value="1"><label for="s1" title="1 sao">★</label></div></fieldset>
+<label for="gn">Họ và tên:</label><input id="gn" required><label for="gc">Nội dung góp ý:</label><textarea id="gc" rows="5" required></textarea>
+<div class="row"><button type="reset" class="btn alt">Xóa</button><button class="btn">Gửi góp ý</button></div><p class="note" role="status"></p></form></div></main>
+<footer class="foot"><span>LuxStay Hà Nội, 18 Tràng Tiền, Q. Hoàn Kiếm, Hà Nội</span><a href="mailto:contact@hotel.com">contact@hotel.com</a><span>Mạng xã hội: <a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">YouTube</a></span></footer></div>
+</div><script src="main.js"></script></body></html>
